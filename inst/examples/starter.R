@@ -23,3 +23,19 @@ officeuiwidget(
     showValue = TRUE
   )
 )
+
+# https://developer.microsoft.com/en-us/fabric#/components/toggle
+# <Toggle
+#   defaultChecked={true}
+#   label="Enabled and checked"
+#   onText="On"
+#   offText="Off"
+# />
+officeuiwidget(
+  reactR::React$Toggle(
+    defaultChecked = TRUE,
+    label = "Enabled and checked",
+    onText = "On",
+    offText = "Off"
+  )
+)
