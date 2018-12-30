@@ -39,3 +39,8 @@ officeuiwidget(
     offText = "Off"
   )
 )
+
+# https://developer.microsoft.com/en-us/fabric#/components/colorpicker
+officeuiwidget(
+  reactR::React$ColorPicker(color = "#ffffff")
+)

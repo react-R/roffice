@@ -18,3 +18,15 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
+
+uiColor <- officeuiwidgetOutput("mycolor")
+serverColor <- function(input, output, session) {
+  output$mycolor <- renderOfficeuiwidget({
+    # https://developer.microsoft.com/en-us/fabric#/components/colorpicker
+    officeuiwidget(
+      reactR::React$ColorPicker(color = "#ffffff", shiny = "onColorChanged")
+    )
+  })
+}
+shinyApp(uiColor, serverColor)
