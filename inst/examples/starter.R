@@ -4,14 +4,14 @@
 library(reactR)
 library(roffice)
 
-# just one prop
+# slider with just one prop
 officeuiwidget(
   reactR::React$Slider(label = "Basic Slider")
   # alternately
   # component("Slider", varArgs = list(label = "Basic Slider"))
 )
 
-# more props and a combination
+# slider with more props and a combination
 officeuiwidget(
   reactR::React$Slider(label = "Basic Slider"),
   reactR::React$Slider(
