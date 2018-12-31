@@ -20,7 +20,10 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 
-uiColor <- officeuiwidgetOutput("mycolor")
+uiColor <- htmltools::tagList(
+  officeuiwidgetOutput("mycolor"),
+  plotOutput("rplot", height=400, width=400)
+)
 serverColor <- function(input, output, session) {
   output$mycolor <- renderOfficeuiwidget({
     # https://developer.microsoft.com/en-us/fabric#/components/colorpicker
@@ -28,6 +31,11 @@ serverColor <- function(input, output, session) {
       # using id prop
       reactR::React$ColorPicker(id = "colorpicker", color = "#ffffff", shinyEvent = "onColorChanged")
     )
+  })
+
+  output$rplot <- renderPlot({
+    color <- input$mycolor_colorpicker_onColorChanged
+    plot(1:10, col=color, pch=16)
   })
 }
 shinyApp(uiColor, serverColor)

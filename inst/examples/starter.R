@@ -44,3 +44,9 @@ officeuiwidget(
 officeuiwidget(
   reactR::React$ColorPicker(color = "#ffffff")
 )
+
+
+# https://developer.microsoft.com/en-us/fabric#/components/datepicker
+officeuiwidget(
+  reactR::React$DatePicker()
+)
