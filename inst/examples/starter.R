@@ -1,5 +1,5 @@
-#devtools::install_github("timelyportfolio/reactR@enhancements")
-#devtools::install_github("timelyportfolio/roffice")
+#devtools::install_github("react-R/reactR@enhancements")
+#devtools::install_github("react-R/roffice")
 
 library(reactR)
 library(roffice)
