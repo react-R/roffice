@@ -1,5 +1,7 @@
-#devtools::install_github("timelyportfolio/reactR@enhancements")
-#devtools::install_github("timelyportfolio/roffice")
+# currently Shiny communication is in progress so this code will not work as of now
+
+#devtools::install_github("react-R/reactR@enhancements")
+#devtools::install_github("react-R/roffice")
 
 library(reactR)
 library(roffice)
