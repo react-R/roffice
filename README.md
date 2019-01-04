@@ -1,6 +1,6 @@
-**Experimental**
-
 # roffice
+
+## Experimental and For Demonstration Purposes Only
 
 `roffice` is a package designed to demonstrate the new functionality included in [`reactR`](https://github.com/react-R/reactR) to leverage [`React`](https://reactjs.org/) and its diverse array of components as `htmlwidgets` in R.
 
